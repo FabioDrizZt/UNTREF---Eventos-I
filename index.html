@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos I</title>
+    <script type="module" src="./js/script.js"></script>
+    <style>
+      img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        z-index: -10;
+        transition: transform 0.1s;
+      }
+      .cajaDinamica {
+        width: 100px;
+        height: 100px;
+        background-color: coral;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--     <button onmouseover="this.innerHTML = 'Hola!'"
+      onmouseout="this.innerHTML = 'No te vayas!'"> Hazme Click
+    </button> -->
+    <button id="miBoton">Haz click aqui</button>
+    <a href="http://www.bing.com">Ir a Bing</a>
+    <a href="http://www.google.com">Ir a google</a>
+    <img
+      id="imgCorazon"
+      src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png"
+      alt="♥"
+    />
+    <hr />
+    <button id="boxMaker">Crear Cajas</button>
+    <section id="cajasCreadas">
+      <!-- Aca van las cajas creadas por el boton -->
+    </section>
+    <h2>Contador: <span id="contador">0</span></h2>
+    <button id="incrementar">Incrementar</button>
+    <button id="decrementar">Decrementar</button>
+    <button id="resetear">Resetear</button>
+  </body>
+</html>
